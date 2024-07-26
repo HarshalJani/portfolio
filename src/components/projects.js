@@ -20,7 +20,7 @@ class Projects extends Component {
                 <CardText>Summary of Project</CardText>
                 <CardActions border>
                     <Button colored>Link to Page Describing Project</Button>
-                    <a href="https://www.linkedin.com/in/harshal-jani/" rel="noopener noreferrer" target="_blank">
+                    <a href="https://github.com/HarshalJani" rel="noopener noreferrer" target="_blank">
                         <Button colored>GitHub</Button>
                         </a>
                 </CardActions>
@@ -37,7 +37,9 @@ class Projects extends Component {
                 <CardText>Summary of Project</CardText>
                 <CardActions border>
                     <Button colored>Link to Page Describing Project</Button>
-                    <Button colored>GitHub</Button>
+                    <a href="https://github.com/HarshalJani" rel="noopener noreferrer" target="_blank">
+                        <Button colored>GitHub</Button>
+                        </a>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
                     <IconButton name="share"/>
@@ -52,7 +54,9 @@ class Projects extends Component {
                 <CardText>Summary of Project</CardText>
                 <CardActions border>
                     <Button colored>Link to Page Describing Project</Button>
-                    <Button colored>GitHub</Button>
+                    <a href="https://github.com/HarshalJani" rel="noopener noreferrer" target="_blank">
+                        <Button colored>GitHub</Button>
+                        </a>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
                     <IconButton name="share"/>
@@ -62,19 +66,87 @@ class Projects extends Component {
         )
     } else if(this.state.activeTab === 1) {
         return(
-            <div><h1>This is Neural Networks</h1></div>
+            <div className="projects-grid">
+                {/*Project 1*/}
+            <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                <CardTitle style={{color: '#fff', height: '175px', background: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmabQSerXpSARasPI7TzMBPeCc44QQ8yBHChyzph4ck0L0IkBK) center / cover'}}>
+                    Data Mining Project #1
+                </CardTitle>
+                <CardText>Summary of Project</CardText>
+                <CardActions border>
+                    <Button colored>Link to Page Describing Project</Button>
+                    <a href="https://github.com/HarshalJani" rel="noopener noreferrer" target="_blank">
+                        <Button colored>GitHub</Button>
+                        </a>
+                </CardActions>
+                <CardMenu style={{color: '#fff'}}>
+                    <IconButton name="share"/>
+                </CardMenu>
+            </Card>
+        </div>
         )
     } else if(this.state.activeTab === 2) {
         return(
-            <div><h1>This is Database System</h1></div>
+            <div className="projects-grid">
+                {/*Project 1*/}
+            <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                <CardTitle style={{color: '#fff', height: '175px', background: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmabQSerXpSARasPI7TzMBPeCc44QQ8yBHChyzph4ck0L0IkBK) center / cover'}}>
+                    Data Mining Project #1
+                </CardTitle>
+                <CardText>Summary of Project</CardText>
+                <CardActions border>
+                    <Button colored>Link to Page Describing Project</Button>
+                    <a href="https://github.com/HarshalJani" rel="noopener noreferrer" target="_blank">
+                        <Button colored>GitHub</Button>
+                        </a>
+                </CardActions>
+                <CardMenu style={{color: '#fff'}}>
+                    <IconButton name="share"/>
+                </CardMenu>
+            </Card>
+        </div>
         )
     } else if(this.state.activeTab === 3) {
         return(
-            <div><h1>This is Simulation</h1></div>
+            <div className="projects-grid">
+                {/*Project 1*/}
+            <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                <CardTitle style={{color: '#fff', height: '175px', background: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmabQSerXpSARasPI7TzMBPeCc44QQ8yBHChyzph4ck0L0IkBK) center / cover'}}>
+                    Data Mining Project #1
+                </CardTitle>
+                <CardText>Summary of Project</CardText>
+                <CardActions border>
+                    <Button colored>Link to Page Describing Project</Button>
+                    <a href="https://github.com/HarshalJani" rel="noopener noreferrer" target="_blank">
+                        <Button colored>GitHub</Button>
+                        </a>
+                </CardActions>
+                <CardMenu style={{color: '#fff'}}>
+                    <IconButton name="share"/>
+                </CardMenu>
+            </Card>
+        </div>
         )
     } else if(this.state.activeTab === 4) {
         return(
-            <div><h1>This is Web Programming</h1></div>
+            <div className="projects-grid">
+                {/*Project 1*/}
+            <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                <CardTitle style={{color: '#fff', height: '175px', background: 'url(https://miro.medium.com/v2/resize:fit:2000/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover'}}>
+                    REACT Website
+                </CardTitle>
+                <CardText>A REACT based website with details on my Career, Skills and Resume</CardText>
+                <CardActions border>
+                    <Button colored>Link to Page Describing Project</Button>
+                    <a href="https://github.com/HarshalJani/portfolio" rel="noopener noreferrer" target="_blank">
+                        <Button colored>GitHub</Button>
+                        </a>
+                </CardActions>
+                <CardMenu style={{color: '#fff'}}>
+                    <IconButton name="share"/>
+                </CardMenu>
+            </Card>
+        </div>
         )
     }
 }
@@ -88,7 +160,7 @@ class Projects extends Component {
                     <Tab>Neural Networks</Tab>
                     <Tab>Database System</Tab>
                     <Tab>Simulation</Tab>
-                    <Tab>Web Programming</Tab>
+                    <Tab>Full Stack Development</Tab>
                 </Tabs>
                 <Grid>
                     <Cell col={12}>
